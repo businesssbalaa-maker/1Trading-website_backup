@@ -1,0 +1,144 @@
+
+  :root {
+    --bright-orange: #ff9900;
+    --pending-color: #f59e0b; /* Amber 500 */
+    --approved-color: #10b981; /* Emerald 500 */
+    --rejected-color: #ef4444; /* Red 500 */
+  }
+  
+  /* Global Styles */
+  .app-container {
+    min-height: 100vh;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+  }
+  .main-content {
+    width: 96%;
+ 
+margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  }
+  .content-padding {
+    padding: 1rem;
+  }
+  
+  /* Header Styles */
+  .header {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid #e5e7eb;
+      background-color: white;
+  }
+  .header-title-group {
+      flex-grow: 1;
+      text-align: center;
+      /* Adjust margin to visually compensate for the back button on the left */
+      margin-right: 2.5rem; 
+  }
+  .header h2 {
+      font-size: 1.25rem; 
+      font-weight: 700;
+      color: #1f2937;
+      margin: 0;
+  }
+  .total-display {
+      font-size: 0.875rem;
+      color: #6b7280;
+      margin-top: 0.25rem;
+  }
+  .back-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+  }
+  .chevron-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #1f2937;
+  }
+
+
+  /* Recharge History List Styles */
+  .recharge-history-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
+  .recharge-item {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      border-left: 5px solid var(--bright-orange);
+  }
+  .recharge-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px dashed #f3f4f6;
+  }
+  .recharge-amount {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1f2937;
+      display: flex;
+      align-items: center;
+  }
+  .recharge-status {
+       font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px; /* Pill shape */
+    font-size: 0.75rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    text-transform: uppercase;
+  }
+ .status-Pending { 
+    background-color: var(--pending-color);
+}
+.status-Approve {
+    background-color: var(--approved-color);
+}
+.status-Reject {
+    background-color: var(--rejected-color);
+}
+  .recharge-info-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.875rem;
+      color: #6b7280;
+  }
+  .recharge-info-row span {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+  }
+  .recharge-info-value {
+      color: #1f2937;
+      font-weight: 500;
+  }
+  .utr-copy-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+  }
+  .utr-text {
+      font-weight: 600;
+      color: #374151;
+  }

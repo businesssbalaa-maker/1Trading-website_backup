@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap');
+
+.bill-page {
+  font-family: "Instrument Sans", sans-serif;
+  width: 100;
+  max-width: 500px;      
+  margin: 0 auto;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffffff, rgb(253, 253, 204), rgb(248, 248, 160));
+  animation: bgFlow 10s infinite alternate;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.bill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fbbf24;  
+  padding: 12px 16px;
+  border-bottom: 2px solid #f59e0b;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.bill-header h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.back-btn {
+  background: white;
+  border: 1px solid #f59e0b;
+  color: black;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-btn:hover {
+  background: #f59e0b;
+  color: white;
+}
+
+/* Tabs */
+.bill-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 10px;
+}
+
+.bill-tabs button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  background: #fef3c7;
+  color: #78350f;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bill-tabs button.active {
+  background: #f59e0b;
+  color: white;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.6);
+}
+
+/* Cards */
+.bill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 16px 20px;
+}
+
+.bill-card {
+  background: #ffffff;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.bill-info h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.bill-info p {
+  font-size: 12px;
+  color: #666;
+}
+
+.bill-amount {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.bill-amount.positive {
+  color: green;
+  text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
+}
+
+.bill-amount.negative {
+  color: #ff6600;
+  text-shadow: 0 0 8px rgba(255, 102, 0, 0.5);
+}
+
+.end-text {
+  text-align: center;
+  color: #777;
+  margin: 20px 0;
+  font-size: 14px;
+}

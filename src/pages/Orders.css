@@ -1,0 +1,362 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap');
+
+* {
+  font-family: "Instrument Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.orders-page {
+ 
+     background: linear-gradient(135deg, #ffffff, rgb(253, 253, 204), rgb(248, 248, 160));
+    animation: bgFlow 10s infinite alternate;
+    width: 100%;
+    /* height: auto; */
+    height: 100vh;
+    margin: 0 auto;
+    /* min-height: 100vh; */
+    margin: 0 auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+
+.orders-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fb923c;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.orders-title{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.back-btnR{
+  position: absolute;
+  left: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.tabs {
+         display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    align-items: center;
+}
+
+.tabs button {
+  padding: 10px 45px;
+  border: 2px solid #fb923c;
+  border-radius: 25px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fcd34d;
+  transition: 0.3s;
+}
+
+.tabs button.active,
+.tabs button:hover {
+  background: #fcd34d;
+  color: white;
+}
+
+/* Orders List */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+    width: 100%;
+  
+    align-items: center;
+    margin-bottom: 43px;
+}
+
+/* Order Card */
+.order-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+    border: 1px solid #fb923c;
+  box-shadow: 0 6px 18px #8d8d8d8d;
+  transition: transform 0.3s;
+  width: 94%;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  width: 95%;
+}
+
+.order-title {
+display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-top: 8px;
+    gap: 10px;
+}
+
+.order-title h3 {
+  font-size: 18px;
+  color: #341539;
+}
+
+.status {
+  padding: 6px 14px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.normal {
+  background: #fb923c;
+  color: #341539;
+}
+
+.status.finish {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* Order Card Body */
+.order-body {
+  background: #fff;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* Each Row */
+.order-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.order-row:last-child {
+  border-bottom: none;
+}
+
+/* Labels */
+.order-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Values */
+.order-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #2563eb;
+}
+
+
+/* Details Button */
+.details-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 16px;
+  background: #fb923c;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.details-btn:hover,
+.details-btn:active {
+  background: #ffb84d;
+  color: #000;
+}
+
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Claim Modal */
+.claim-modal {
+  background: #fff8e1;
+  padding: 25px 20px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+.claim-btn {
+  padding: 4px 10px;
+  background: #fb923c;
+  color: white;
+  font-weight: 400;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+  font-size: 12px;
+}
+
+.claim-btn:hover {
+  background: #fcd34d;
+  color: #341539;
+}
+
+/* Modal Header */
+.claim-modal h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #341539;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Claim List */
+.claim-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.claim-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #fb923c;
+  background: white;
+  font-weight: 500;
+}
+
+.claim-item.available {
+  border-color: #34d399;
+  background: #dcfce7;
+}
+
+.claim-item.locked {
+  border-color: #f87171;
+  background: #fee2e2;
+  opacity: 0.8;
+}
+
+/* Claim Now Button */
+.claim-now-btn {
+  background: #fb923c;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.claim-now-btn:hover {
+  background: #ffb84d;
+  color: #000;
+}
+
+/* Close Modal Button */
+.close-modal {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #f87171;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-modal:hover {
+  background: #fb923c;
+  color: white;
+}
+
+/* Scrollbar for Claim Modal */
+.claim-modal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.claim-modal::-webkit-scrollbar-thumb {
+  background: #fb923c;
+  border-radius: 3px;
+}
+.order-title b {
+  font-size: 14px;
+  color: #341539;
+  font-weight: 600;
+  max-width: 60%;      /* adjust width based on your layout */
+  white-space: nowrap;  /* prevent wrapping */
+  overflow: hidden;    /* hide overflow text */
+
+  text-overflow: ellipsis; /* show ... for overflow */
+}
+.claim-status {
+  position: fixed;
+  top: 20px;
+  left: 40%;
+  transform: translateX(-50%);
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.claim-status.success {
+  background-color: #22c55e; /* green */
+}
+
+.claim-status.fail {
+  background-color: #ef4444; /* red */
+}

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap');
+
+* {
+  font-family: 'Instrument Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.investbuy-container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ffcf60, #ffe9b0);
+  padding: 10px;
+}
+
+/* Header */
+.investbuy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #ffcf60;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chat-icon {
+  font-size: 20px;
+}
+
+/* Product Image */
+.product-image-box {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.product-main-img {
+  width: 220px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Price Details Box */
+.price-box {
+  background: #fff8e1;
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+
+.price-box p {
+  margin: 8px 0;
+}
+
+.highlight {
+  color: #f39c12;
+  font-weight: 600;
+}
+
+.buy-range {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 12px 0;
+}
+
+.range-btn {
+  background: #fff;
+  border: 1px solid #f39c12;
+  border-radius: 50%;
+  padding: 6px 14px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #f39c12;
+}
+
+.range-btn:hover {
+  background: #f39c12;
+  color: white;
+}
+
+.buy-now-btn {
+  background: #ff9800;
+  color: #fff;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.buy-now-btn:hover {
+  background: #f57c00;
+}
+
+.info-card {
+  background: #fffdf5;
+  border: 1px solid #ffe082;
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.info-card p {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}

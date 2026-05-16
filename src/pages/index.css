@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: 'Instrument Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: 1px solid black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.back-btnR {
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.back-btnR:hover {
+  transform: translateX(-4px);
+  color: #341539;
+}
