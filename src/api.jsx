@@ -5,7 +5,7 @@ import { decryptResponse } from "./utils/decrypt";
 export const API_BASE_URL = "https://backend.realstateinvest.online/";
 export const API_BASE_URL2 = "https://backend.realstateinvest.online";
 // export const API_BASE_URL = "http://localhost:5004/";
-// export const API_BASE_URL2 = "http://localhost:5004";
+// export const API_BASE_URL2 = "http://localhost:5004"; 
 
 // ✅ Shared secret key (must match backend)
 export const SECRET_KEY = "SECRET_KEY12356789";
