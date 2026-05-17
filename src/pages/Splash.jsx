@@ -8,7 +8,7 @@ function Splash() {
 
   // Auto-check for token in cookies
   useEffect(() => {
-    const token = Cookies.get("2ndtredingWeb");
+    const token = Cookies.get("1sttredingWeb");
     if (token) {
       navigate("/home");
     }

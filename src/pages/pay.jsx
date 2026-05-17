@@ -66,7 +66,7 @@ const Pay = () => {
 
   // 🔐 Get user data
   const getUserData = async() => {
-    const encryptedUser = Cookies.get("2ndtredingWebUser");
+    const encryptedUser = Cookies.get("1sttredingWebUser");
     if (encryptedUser) {
      const base64 = encryptedUser.replace(/-/g, "+").replace(/_/g, "/");
                

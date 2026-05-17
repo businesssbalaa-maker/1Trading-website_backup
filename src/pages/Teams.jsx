@@ -144,7 +144,7 @@ const Teams = () => {
 
   useEffect(() => {
     const fetchUserTeam = async () => {
-      const encryptedUser = Cookies.get("2ndtredingWebUser");
+      const encryptedUser = Cookies.get("1sttredingWebUser");
       if (!encryptedUser) return navigate("/login");
 
       const base64 = encryptedUser.replace(/-/g, "+").replace(/_/g, "/");

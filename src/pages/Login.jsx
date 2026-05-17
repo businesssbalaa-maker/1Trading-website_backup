@@ -26,8 +26,8 @@ const Login = () => {
     const credentials = { phone: mobileNumber, password };
 
     try {
-      Cookies.remove("2ndtredingWeb");
-      Cookies.remove("2ndtredingWebUser");
+      Cookies.remove("1sttredingWeb");
+      Cookies.remove("1sttredingWebUser");
       const response = await loginUser(credentials);
 
       if (response.token && response.user) {
@@ -53,8 +53,8 @@ const Login = () => {
           .replace(/=+$/, "");
 
         // ✅ 6. Store securely
-        Cookies.set("2ndtredingWeb", response.token, { expires: 7, path: "/" });
-        Cookies.set("2ndtredingWebUser", base64url, { expires: 7, path: "/" });
+        Cookies.set("1sttredingWeb", response.token, { expires: 7, path: "/" });
+        Cookies.set("1sttredingWebUser", base64url, { expires: 7, path: "/" });
 
         localStorage.setItem("userData", JSON.stringify(response.user));
 

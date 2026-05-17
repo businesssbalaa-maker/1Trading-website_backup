@@ -107,8 +107,8 @@ const jsonString = JSON.stringify(response.user);
         .replace(/=+$/, "");
 
       // ✅ 6. Store securely
-      Cookies.set("2ndtredingWeb", response.token, { expires: 7, path: "/" });
-      Cookies.set("2ndtredingWebUser", base64url, { expires: 7, path: "/" });
+      Cookies.set("1sttredingWeb", response.token, { expires: 7, path: "/" });
+      Cookies.set("1sttredingWebUser", base64url, { expires: 7, path: "/" });
 
       localStorage.setItem("userData", JSON.stringify(response.user));
 

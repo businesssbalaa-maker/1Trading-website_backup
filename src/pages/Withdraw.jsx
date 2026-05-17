@@ -13,7 +13,7 @@ import {
 import CryptoJS from "crypto-js";
 import Cookies from "js-cookie";
 import pako from "pako";
-const encryptedUser = Cookies.get("2ndtredingWebUser");
+const encryptedUser = Cookies.get("1sttredingWebUser");
 
 const Withdraw = () => {
   const navigate = useNavigate();

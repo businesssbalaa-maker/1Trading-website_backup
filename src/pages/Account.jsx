@@ -48,7 +48,7 @@ let updatedData = {};
 const fetchAccountData = async () => {
       try {
         // ✅ Step 1: Read encrypted user info from cookie
-        const encryptedUser = Cookies.get("2ndtredingWebUser");
+        const encryptedUser = Cookies.get("1sttredingWebUser");
         if (!encryptedUser) {
           console.warn("No user cookie found — redirecting to login");
           navigate("/login");

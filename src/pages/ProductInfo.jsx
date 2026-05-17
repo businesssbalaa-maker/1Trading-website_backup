@@ -7,7 +7,7 @@ import Cookies from "js-cookie";
 import pako from "pako";
 import { API_BASE_URL2, BuyProduct, getUserInfo, SECRET_KEY } from "../api";
 
-const encryptedUser = Cookies.get("2ndtredingWebUser");
+const encryptedUser = Cookies.get("1sttredingWebUser");
 
 // --- Sub-Components ---
 

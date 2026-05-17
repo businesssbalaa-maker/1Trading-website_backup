@@ -39,9 +39,9 @@ function ChangePassword() {
         alert("Password updated successfully! Pleas login");
         
                 
-                     Cookies.remove("2ndtredingWeb");
+                     Cookies.remove("1sttredingWeb");
                    
-                Cookies.set("2ndtredingWeb", data.token, { expires: 7, path: "/" });
+                Cookies.set("1sttredingWeb", data.token, { expires: 7, path: "/" });
                    
                 
                 //         // ✅ Save in localStorage

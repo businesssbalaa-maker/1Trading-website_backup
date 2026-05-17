@@ -651,8 +651,8 @@ const ServiceItem = ({ service, onClick }) => (
 
 // Component for the Sign Out button
 const SignOutButton = ({navigate}) => (
-  <button className="signout-btn" onClick={() => {Cookies.remove("2ndtredingWeb");
-            Cookies.remove("2ndtredingWebUser");
+  <button className="signout-btn" onClick={() => {Cookies.remove("1sttredingWeb");
+            Cookies.remove("1sttredingWebUser");
             localStorage.removeItem("userData");
             navigate("/login");}}>
     <div className="signout-content">

@@ -26,8 +26,8 @@ const HomePage = () => {
   const [TeamSize, setTeamSize] = useState(0);
   const navigate = useNavigate();
   const fetchUser = async () => {
-    const encryptedUser = Cookies.get("2ndtredingWebUser");
-    const token = Cookies.get("2ndtredingWeb");
+    const encryptedUser = Cookies.get("1sttredingWebUser");
+    const token = Cookies.get("1sttredingWeb");
     if (encryptedUser) {
       try {
          
@@ -59,8 +59,8 @@ console.log(res1)
             // ✅ Token valid, user data in res.data.data
         
           } else {
-                    Cookies.remove("2ndtredingWeb");
-            Cookies.remove("2ndtredingWebUser");
+                    Cookies.remove("1sttredingWeb");
+            Cookies.remove("1sttredingWebUser");
             localStorage.removeItem("userData");
             navigate("/login");
           }
@@ -70,8 +70,8 @@ console.log(res1)
           // 🔹 If server returns 403 → token mismatch
           if (err.response?.status === 403) {
             // Clear cookies and local storage
-            Cookies.remove("2ndtredingWeb");
-            Cookies.remove("2ndtredingWebUser");
+            Cookies.remove("1sttredingWeb");
+            Cookies.remove("1sttredingWebUser");
             localStorage.removeItem("userData");
 
             // Redirect to login
